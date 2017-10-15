@@ -1,0 +1,63 @@
+
+*** Running vivado
+    with args -log design_1_v_tc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_v_tc_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Xilinx/Vivado/2017.2/scripts/Vivado_init.tcl'
+0 Beta devices matching pattern found, 0 enabled.
+source design_1_v_tc_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 385.484 ; gain = 80.238
+INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_0' [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_tc_0_0' (11#1) [c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:92]
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 547.414 ; gain = 242.168
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 547.414 ; gain = 242.168
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 809.422 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 809.422 ; gain = 504.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 809.422 ; gain = 504.176
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    75|
+|2     |LUT1   |   137|
+|3     |LUT2   |   132|
+|4     |LUT3   |   631|
+|5     |LUT4   |   186|
+|6     |LUT5   |   114|
+|7     |LUT6   |   400|
+|8     |MUXF7  |   134|
+|9     |SRL16E |     6|
+|10    |FDRE   |  2938|
+|11    |FDSE   |   256|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 809.422 ; gain = 504.176
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 809.422 ; gain = 507.805

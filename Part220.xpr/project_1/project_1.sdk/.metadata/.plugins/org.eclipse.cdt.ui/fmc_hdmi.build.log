@@ -1,0 +1,6 @@
+10:06:56 **** Incremental Build of configuration Debug for project fmc_hdmi ****
+make all 
+make: Nothing to be done for `all'.
+
+10:06:56 Build Finished (took 140ms)
+

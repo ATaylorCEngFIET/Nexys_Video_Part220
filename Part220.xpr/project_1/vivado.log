@@ -1,0 +1,742 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Oct 14 13:59:18 2017
+# Process ID: 9308
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10052
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Xilinx/Vivado/2017.2/scripts/Vivado_init.tcl'
+0 Beta devices matching pattern found, 0 enabled.
+start_gui
+open_project C:/hdl_projects/nexys_video/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mig_7series_0_0' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_4' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_3' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_5' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1037.918 ; gain = 267.637
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/hdl_projects/nexys_video/project_1/project_1.sdk -hwspec C:/hdl_projects/nexys_video/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/hdl_projects/nexys_video/project_1/project_1.sdk -hwspec C:/hdl_projects/nexys_video/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689899B
+set_property PROGRAM.FILE {C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a200t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:03:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:03:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:04:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:04:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:04:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:04:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:04:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:04:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:04:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:04:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:11:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:11:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:11:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:11:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:29:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:29:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:29:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:29:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:29:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:29:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:33:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:33:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:33:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:33:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:33:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:33:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:34:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:34:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:34:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:34:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:37:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:37:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mig_7series:4.0 - mig_7series_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset(rst) and /dvi2rgb_0/aRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset(rst) and /dvi2rgb_0/pRst(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dvi2rgb_0/PixelClk(clk) and /ila_0/probe4(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Successfully read diagram <design_1> from BD file <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1223.590 ; gain = 26.965
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:42:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:42:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:42:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:42:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:43:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:43:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:43:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:43:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:43:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:43:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:43:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:43:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:43:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:43:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:47:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:47:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:47:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:47:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:47:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:47:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:47:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:47:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 848 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 349 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 60 instances
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 78 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 159 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 1 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1405.324 ; gain = 44.840
+INFO: [Common 17-344] 'open_run' was cancelled
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 14:53:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 14:53:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.kRstActiveHigh {false}] [get_bd_cells dvi2rgb_0]
+WARNING: [BD 41-1684] Pin /dvi2rgb_0/aRst is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /dvi2rgb_0/pRst is now disabled. All connections to this pin have been removed. 
+endgroup
+save_bd_design
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+connect_bd_net [get_bd_ports reset] [get_bd_pins dvi2rgb_0/aRst_n]
+connect_bd_net [get_bd_ports reset] [get_bd_pins dvi2rgb_0/pRst_n]
+save_bd_design
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_dvi2rgb_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn (synchronous to clock source /mig_7series_0/ui_clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /dvi2rgb_0/PixelClk.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x9FFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x9FFFFFFF.
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = d2ad19f8e70cfb40; cache size = 100.872 MB.
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1454.227 ; gain = 13.961
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 998d443c7f6aaae5; cache size = 100.872 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 998d443c7f6aaae5; cache size = 100.872 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 998d443c7f6aaae5; cache size = 100.872 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 998d443c7f6aaae5; cache size = 100.872 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 998d443c7f6aaae5; cache size = 100.872 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_5, cache-ID = 1f9e57c680cedcf0; cache size = 100.872 MB.
+[Sat Oct 14 15:00:27 2017] Launched design_1_dvi2rgb_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_dvi2rgb_0_0_synth_1: C:/hdl_projects/nexys_video/project_1/project_1.runs/design_1_dvi2rgb_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/nexys_video/project_1/project_1.runs/synth_1/runme.log
+[Sat Oct 14 15:00:27 2017] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 1455.199 ; gain = 49.875
+file copy -force C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.sysdef C:/hdl_projects/nexys_video/project_1/project_1.sdk/design_1_wrapper.hdf
+
+file copy -force C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.sysdef C:/hdl_projects/nexys_video/project_1/project_1.sdk/design_1_wrapper.hdf
+
+file copy -force C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.sysdef C:/hdl_projects/nexys_video/project_1/project_1.sdk/design_1_wrapper.hdf
+
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:24:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:24:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:25:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:25:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:38:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:38:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:38:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:38:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.kClkRange {1}] [get_bd_cells dvi2rgb_0]
+endgroup
+save_bd_design
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_dvi2rgb_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn (synchronous to clock source /mig_7series_0/ui_clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /dvi2rgb_0/PixelClk.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x9FFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x9FFFFFFF.
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = d2ad19f8e70cfb40; cache size = 101.672 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 998d443c7f6aaae5; cache size = 101.672 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 998d443c7f6aaae5; cache size = 101.672 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 998d443c7f6aaae5; cache size = 101.672 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 998d443c7f6aaae5; cache size = 101.672 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 998d443c7f6aaae5; cache size = 101.672 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_5, cache-ID = 1f9e57c680cedcf0; cache size = 101.672 MB.
+[Sat Oct 14 15:41:24 2017] Launched design_1_dvi2rgb_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_dvi2rgb_0_0_synth_1: C:/hdl_projects/nexys_video/project_1/project_1.runs/design_1_dvi2rgb_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/nexys_video/project_1/project_1.runs/synth_1/runme.log
+[Sat Oct 14 15:41:24 2017] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:59 . Memory (MB): peak = 1510.238 ; gain = 8.840
+file copy -force C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.sysdef C:/hdl_projects/nexys_video/project_1/project_1.sdk/hw_1/design_1_wrapper.hdf
+
+file copy -force C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/design_1_wrapper.sysdef C:/hdl_projects/nexys_video/project_1/project_1.sdk/design_1_wrapper.hdf
+
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:55:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:55:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes design_1_i/dvi2rgb_0_vid_pVSync -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:55:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:55:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:55:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:55:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 15:55:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 15:55:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 16:08:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 16:08:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.C_DATA_DEPTH {8192}] [get_bd_cells ila_0]
+endgroup
+save_bd_design
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run synth_1
+reset_run design_1_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_clk_wiz_0_100M/peripheral_aresetn (synchronous to clock source /mig_7series_0/ui_clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /dvi2rgb_0/PixelClk.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x9FFFFFFF.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x9FFFFFFF.
+Wrote  : <C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's01_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's01_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at C:/Xilinx/Vivado/2017.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = d2ad19f8e70cfb40; cache size = 102.473 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 998d443c7f6aaae5; cache size = 102.473 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 998d443c7f6aaae5; cache size = 102.473 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 998d443c7f6aaae5; cache size = 102.473 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 998d443c7f6aaae5; cache size = 102.473 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 998d443c7f6aaae5; cache size = 102.473 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_5, cache-ID = 1f9e57c680cedcf0; cache size = 102.473 MB.
+[Sat Oct 14 16:09:56 2017] Launched design_1_ila_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_ila_0_0_synth_1: C:/hdl_projects/nexys_video/project_1/project_1.runs/design_1_ila_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/nexys_video/project_1/project_1.runs/synth_1/runme.log
+[Sat Oct 14 16:09:56 2017] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/nexys_video/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:00:58 . Memory (MB): peak = 1591.543 ; gain = 46.008
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 18:08:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 18:08:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 18:08:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 18:08:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 18:08:55
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2017-Oct-14 18:09:11
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 18:09:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 18:09:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 18:09:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 18:09:13
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 256 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 18:09:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 18:09:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-14 19:35:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-14 19:35:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/hdl_projects/nexys_video/project_1/project_1.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276689899B
+archive_project C:/hdl_projects/nexys_video/p218.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13 -force
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mig_7series_0_0' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_4' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_3' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_5' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt'. Please regenerate to continue.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_'.
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Common 17-69] Command failed: 
+INFO: [Common 17-344] 'archive_project' was cancelled
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276689899B
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276689899B
+archive_project C:/hdl_projects/nexys_video/Part220.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13 -force
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mig_7series_0_0' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_4' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_3' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_5' generated file not found 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt'. Please regenerate to continue.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_'.
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'
+CRITICAL WARNING: [IP_Flow 19-4299] Failed to copy 'c:/hdl_projects/nexys_video/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt' to 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9308-DESKTOP-HQKVQ13/PrjAr/_X_/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt'
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_dlmb_v10_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_ilmb_v10_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_dlmb_bram_if_cntlr_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_lmb_bram_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_axi_uartlite_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_axi_gpio_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_microblaze_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_xbar_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_axi_intc_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_v_tc_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_xlconcat_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_dvi2rgb_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_xlconstant_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_axi_gpio_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_ila_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'design_1_dlmb_v10_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ilmb_v10_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_dlmb_bram_if_cntlr_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_lmb_bram_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_uartlite_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_gpio_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_microblaze_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_intc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xlconcat_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_dvi2rgb_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xlconstant_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_gpio_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_gpio_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_gpio_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_gpio_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_gpio_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_intc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_intc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_uartlite_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_uartlite_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_dlmb_bram_if_cntlr_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_dlmb_bram_if_cntlr_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_dlmb_v10_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_dlmb_v10_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_dvi2rgb_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_dvi2rgb_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ilmb_v10_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ilmb_v10_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_lmb_bram_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_lmb_bram_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_microblaze_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_microblaze_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xlconcat_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xlconcat_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xlconstant_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xlconstant_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
